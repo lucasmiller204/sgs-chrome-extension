@@ -10,17 +10,17 @@
     "action" : {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "/images/sgs-badge.png",
-            "32": "/images/sgs-badge.png",
-            "48": "/images/sgs-badge.png",
-            "128": "/images/sgs-badge.png"
+            "16": "/images/sgs-badge16.png",
+            "32": "/images/sgs-badge32.png",
+            "48": "/images/sgs-badge48.png",
+            "128": "/images/sgs-badge128.png"
         }
     },
     "icons": {
-        "16": "/images/sgs-badge.png",
-        "32": "/images/sgs-badge.png",
-        "48": "/images/sgs-badge.png",
-        "128": "/images/sgs-badge.png"
+        "16": "/images/sgs-badge16.png",
+        "32": "/images/sgs-badge32.png",
+        "48": "/images/sgs-badge48.png",
+        "128": "/images/sgs-badge128.png"
     },
     "options_page": "options.html"
 }
