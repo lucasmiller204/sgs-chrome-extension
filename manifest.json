@@ -1,6 +1,6 @@
 {
-    "name" : "Fundamentals",
-    "description" : "This is a jump pad for creating greater extensions",
+    "name" : "Smart Gen Society Self Reporter",
+    "description" : "self-report form made to work quickly with webpages to help federal law enforcement receive actionable data to prevent child grooming",
     "version" : "1.0",
     "manifest_version" : 3,
     "background" : {
@@ -12,7 +12,7 @@
         "default_icon": {
             "16": "/images/get_started16.png",
             "32": "/images/get_started32.png",
-            "48": "/images/get_started48.png",
+            "48": "/images/ßget_started48.png",
             "128": "/images/get_started128.png"
         }
     },
