@@ -1,7 +1,7 @@
 let page = document.getElementById("buttonDiv");
 let selectedClassName = "current";
 const presentButtonColors = ["#3aa757", "#e8453c", "#f9bb2d", "#4688f1", "#ffffff", "#000000"];
-
+//smart gen society colors are Orange:EE903F, Grey:8C8D90, White:FFFFFF
 function handleButtonClick(event) {
     let current = event.target.parentElement.querySelector(
         `.$selectedClassName`
