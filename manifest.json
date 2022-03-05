@@ -2,11 +2,11 @@
     "name": "Smart Gen Society Self Reporter",
     "description": "self-report form made to work quickly with webpages to help federal law enforcement receive actionable data to prevent child grooming",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 4,
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": ["notifications", "fontSettings", "storage", "activeTab", "scripting", "tabs"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
