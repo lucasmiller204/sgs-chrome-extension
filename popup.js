@@ -1,9 +1,19 @@
 let changeColor = document.getElementById("changeColor");
-let button = document.getElementById("reportBtn1");
+let reportButton = document.getElementById("reportBtn1");
+let teenHelpButton = document.getElementById("teenHelpBtn1");
+let parentHelpButton = document.getElementById("parentHelpBtn1");
 
 // Reporting button event listener
-button.addEventListener("click", function() {
+reportButton.addEventListener("click", function() {
     chrome.tabs.create({ url: "https://www.smartgensociety.org/reporting" });
+});
+
+teenHelpButton.addEventListener("click", function() {
+    chrome.tabs.create({ url: "https://www.smartgensociety.org/resources/teens" });
+});
+
+parentHelpButton.addEventListener("click", function() {
+    chrome.tabs.create({ url: "https://www.smartgensociety.org/resources/parents" });
 });
 
 // chrome.storage.sync.get("color", ({ color }) => {
@@ -25,4 +35,5 @@ button.addEventListener("click", function() {
 //     chrome.storage.sync.get("color", ({ color }) => {
 //         document.body.style.backgroundColor = color;
 //     });
+// }   });
 // }
