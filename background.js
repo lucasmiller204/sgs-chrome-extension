@@ -7,6 +7,24 @@ chrome.runtime.onInstalled.addListener(() => {
     console.log('Default background color set to %cgreen', `color: ${color}`);
 });
 
-chrome.browserAction.onClicked.addListener(function(tab) {
-    chrome.tabs.create({ url: "https://www.smartgensociety.org/reporting" });
-});
+
+// // Add event actions to actually happen here!
+// chrome.browserAction.onClicked.addListener(function() {
+//     chrome.tabs.create({ url: "https://www.smartgensociety.org/reporting" });
+// });
+
+// chrome.browserAction.onClicked.addListener(function() {
+//     chrome.tabs.create({ url: "https://www.smartgensociety.org/resources/teens" });
+// });
+
+// chrome.browserAction.onClicked.addListener(function() {
+//     chrome.tabs.create({ url: "https://www.smartgensociety.org/resources/parents" });
+// });
+
+
+// chrome.browserAction.onClicked.addListener(function() {
+//     chrome.tabs.executeScript({
+//         code: 'document.body.style.backgroundColor = "black";'
+//     });
+//     console.log("Help clicked");
+// });
