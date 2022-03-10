@@ -2,25 +2,34 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 
-<body>
+<body id="popupBody">
     <!-- <button id="changeColor"></button> -->
     <div>
-        <h2>Report Digital Crimes</h2>
-        <input type="button" class="reportButton" id="reportBtn1" value="Report to Smart Gen Society" />
-        <input type="button" class="moreHelpButton" id="moreHelpBtn1" value="More Help" />
+        <h2>SGS Online Safety Extension</h2>
+        <h4 id="safePlace">Are you in a safe space and mindset?</h4>
+        <input type="button" class="reportButton" id="reportBtnY" value="Yes" />
+        <input type="button" class="reportButton" id="reportBtnN" value="No" />
+    </div>
+    <div>
+        <h2 id="reportHeader" style="display: none">Report Digital Crimes</h2>
+        <input type="button" class="reportButton" id="reportBtn1" style="display:none" value="Report to Smart Gen Society" />
+        <input type="button" class="moreHelpButton" id="moreHelpBtn1" style="display:none" value="More Help" />
+        <input type="button" class="backButton" id="backBtn1" style="display:none" value="Back" />
         <div>
-            <h2>Hotlines and Resources</h2>
+            <h2 id="resourceHeader" style="display: none">Hotlines and Resources</h2>
 
-            <body>
-                <input type="button" class="teenHelpButton" id="teenHelpBtn1" value="Teenagers' Resources" />
-                <input type="button" class="parentHelpButton" id="parentHelpBtn1" value="Parents' Resources" />
-                <p>Lifeline: 1-800-273-8255 <br> SAMSHA: 1-800-662-4357</p>
+            <body id="resourceBody">
+                <input type="button" class="teenHelpButton" id="teenHelpBtn1" value="Teenagers ' Resources" style="display: none" />
+                <input type="button" class="parentHelpButton" id="parentHelpBtn1" value="Parents' Resources" style="display: none" />
+                <input type="button" class="interactiveReportingButton" id="interactiveReportingBtn1" value="Interactive Reporting" style="display: none" />
+                <p id="additionalResourcesBody" style="display : none">Lifeline: 1-800-273-8255 <br> SAMSHA: 1-800-662-4357</p>
             </body>
         </div>
         <script src="popup.js"></script>
+    </div>
 </body>
 
 </html>
