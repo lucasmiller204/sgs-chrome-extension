@@ -9,6 +9,7 @@ var additionalResourcesBody = document.getElementById("additionalResourcesBody")
 var resourceHeader = document.getElementById("resourceHeader");
 var reportHeader = document.getElementById("reportHeader");
 var interactiveReportingButton = document.getElementById("interactiveReportingBtn1");
+var safePlaceHeader = document.getElementById("safePlace");
 
 // Reporting button event listener
 reportButton.addEventListener("click", function() {
@@ -24,11 +25,33 @@ parentHelpButton.addEventListener("click", function() {
 });
 
 reportButtonYes.addEventListener("click", function() {
-
+    reportButton.style.display = "initial";
+    reportHeader.style.display = "initial";
+    moreHelpButton.style.display = "initial";
+    reportButtonYes.style.display = "none";
+    reportButtonNo.style.display = "none";
+    backButton.style.display = "none";
+    additionalResourcesBody.style.display = "none";
+    teenHelpButton.style.display = "none";
+    parentHelpButton.style.display = "none";
+    resourceHeader.style.display = "none";
+    additionalResourcesBody.style.display = "none";
+    safePlaceHeader.style.display = "none";
 });
 
 reportButtonNo.addEventListener("click", function() {
-
+    reportButton.style.display = "none";
+    reportHeader.style.display = "none";
+    moreHelpButton.style.display = "none";
+    reportButtonYes.style.display = "none";
+    reportButtonNo.style.display = "none";
+    backButton.style.display = "none";
+    additionalResourcesBody.style.display = "initial";
+    teenHelpButton.style.display = "initial";
+    parentHelpButton.style.display = "initial";
+    resourceHeader.style.display = "initial";
+    additionalResourcesBody.style.display = "initial";
+    safePlaceHeader.style.display = "none";
 });
 
 moreHelpButton.addEventListener("click", function() {
@@ -36,6 +59,8 @@ moreHelpButton.addEventListener("click", function() {
     reportHeader.style.display = "none";
     moreHelpButton.style.display = "none";
     backButton.style.display = "initial";
+    reportButtonYes.style.display = "none";
+    reportButtonNo.style.display = "none";
     additionalResourcesBody.style.display = "initial";
     teenHelpButton.style.display = "initial";
     parentHelpButton.style.display = "initial";
@@ -56,16 +81,3 @@ backButton.addEventListener("click", function() {
     additionalResourcesBody.style.display = "none";
     interactiveReportingButton.style.display = "none";
 });
-
-// interactiveReportingButton.addEventListener("click", function() {
-//     reportButton.style.display = "none";
-//     reportHeader.style.display = "none";
-//     moreHelpButton.style.display = "none";
-//     backButton.style.display = "none";
-//     additionalResourcesBody.style.display = "none";
-//     teenHelpButton.style.display = "none";
-//     parentHelpButton.style.display = "none";
-//     resourceHeader.style.display = "none";
-//     additionalResourcesBody.style.display = "none";
-//     interactiveReportingButton.style.display = "none";
-// });
